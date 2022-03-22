@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class PauseMenu : MonoBehaviour
 {
 
         [SerializeField] GameObject pauseMenu;
+        GameObject MusicToggle;
     
 
     public void Pause()
@@ -28,14 +30,25 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene(sceneId);
     }
 
-    public void Music(bool music)
+    public void Music(Toggle music)
     {
-        if (music)
-        {
+        if (music.isOn) {
             //music on
-        } else 
-        {
+            music.GetComponentInChildren<Text> ().text = "Music is on";
+        } else {
             //music off
+            music.GetComponentInChildren<Text> ().text = "Music is off";
+        }
+    }
+
+    public void Difficulty(Slider diff) {
+        int sliderVal = (int)diff.value;
+        if (sliderVal == 1) {
+            diff.GetComponentInChildren<Text> ().text = "Easy";
+        } else if (sliderVal == 2) {
+            diff.GetComponentInChildren<Text> ().text = "Medium";
+        } else {
+            diff.GetComponentInChildren<Text> ().text = "Hard";
         }
     }
 }
