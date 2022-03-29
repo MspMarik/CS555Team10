@@ -155,3 +155,4 @@ Received Import Request.
   path: Assets/Free Pixel Space Platform Pack/Astronaut/AstroLadder.png
   artifactKey: Guid(9e32e8a78482a0142b7d8c36040d3ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Free Pixel Space Platform Pack/Astronaut/AstroLadder.png using Guid(9e32e8a78482a0142b7d8c36040d3ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd903761213b8db506be4cd9004f38565') in 0.017167 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
