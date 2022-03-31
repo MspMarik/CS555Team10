@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <scenes>
     <scene desc="" id="0" name="Main"/>
+    <scene desc="" id="1" name="Pause menu"/>
+    <scene desc="" id="2" name="Home Page"/>
 </scenes>
