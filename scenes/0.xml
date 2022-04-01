@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="1" desc="" eventsnippetid="0" extheight="544" extwidth="704" extx="-32" exty="-32" format="4.0.1" gravx="-0.0" gravy="0.0" height="480" id="0" name="Main" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
+    <layers>
+        <color-bg blue="0" green="153" red="51"/>
+        <layer blendMode="normal" color="0,95,36" id="3" locked="false" name="Layer 3" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+    </layers>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="1" c="true" group="3" id="2" name="Player 1" order="0" sx="0.55172414" sy="0.55172414" x="275" y="194" z="3">
+            <snippets>
+                <s enabled="true" id="1"/>
+                <s enabled="true" id="2">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="32" list="0" val="down"/>
+                    <prop id="33" list="0" val="left"/>
+                    <prop id="34" list="0" val="right"/>
+                    <prop id="38" list="0" val="0.0"/>
+                    <prop id="39" list="0" val="0.0"/>
+                    <prop id="40" list="0" val="true"/>
+                    <prop id="11" list="0" val="30.0"/>
+                    <prop id="44" list="0" val="false"/>
+                    <prop id="45" list="0" val="false"/>
+                    <prop id="46" list="0" val="true"/>
+                    <prop id="47" list="0" val="false"/>
+                    <prop id="49" list="0" val="false"/>
+                    <prop id="50" list="0" val=""/>
+                    <prop id="51" list="0" val=""/>
+                    <prop id="52" list="0" val=""/>
+                    <prop id="53" list="0" val=""/>
+                    <prop id="54" list="0" val=""/>
+                    <prop id="55" list="0" val=""/>
+                    <prop id="56" list="0" val=""/>
+                    <prop id="57" list="0" val=""/>
+                    <prop id="58" list="0" val="false"/>
+                    <prop id="31" list="0" val="up"/>
+                </s>
+            </snippets>
+        </actor>
+    </actors>
+    <snippets/>
+    <terrain>
+        <p pts="4,0.0,16.0,96.0,16.0,96.0,0.0,0.0,0.0" x="0.0" y="320.0"/>
+        <p pts="4,0.0,16.0,96.0,16.0,96.0,0.0,0.0,0.0" x="0.0" y="352.0"/>
+        <p pts="4,0.0,16.0,96.0,16.0,96.0,0.0,0.0,0.0" x="0.0" y="256.0"/>
+        <p pts="4,0.0,16.0,96.0,16.0,96.0,0.0,0.0,0.0" x="0.0" y="384.0"/>
+        <p pts="4,0.0,16.0,96.0,16.0,96.0,0.0,0.0,0.0" x="0.0" y="288.0"/>
+    </terrain>
+    <atlases members="" retainAtlases="true"/>
+</scene>
