@@ -205,9 +205,9 @@
                 <if comment="false" x="26" y="860">
                     <group eventID="3" id="-1">
                         <if comment="false" x="37" y="885">
-                            <group eventID="-1" id="-1">
+                            <group eventID="3" id="-1">
                                 <if comment="false" x="48" y="928">
-                                    <group eventID="-1" id="-1">
+                                    <group eventID="3" id="-1">
                                         <setanim comment="false" x="59" y="966">
                                             <ACTOR eid="this" id="0"/>
                                             <get-val-2-50 comment="false" id="1" x="0" y="0"/>
