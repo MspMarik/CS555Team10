@@ -3,4 +3,7 @@
     <scene desc="" id="0" name="Main"/>
     <scene desc="" id="1" name="Pause menu"/>
     <scene desc="" id="2" name="Home Page"/>
+    <scene desc="" id="3" name="Intermediate River"/>
+    <scene desc="" id="4" name="Intermediate Houses"/>
+    <scene desc="" id="5" name="Meditation Area"/>
 </scenes>

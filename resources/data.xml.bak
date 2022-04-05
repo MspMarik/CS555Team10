@@ -138,14 +138,76 @@
         <tile collision="1" data="" durations="100" frames="134" id="134" order="-1"/>
         <tile collision="1" data="" durations="100" frames="135" id="135" order="-1"/>
     </tileset>
+    <tileset across="10" atlasID="0" desc="" down="5" id="18" name="alphabets" oid="-1" readable="false" shared="false" th="32" tw="32">
+        <tile collision="-1" data="" durations="100" frames="0" id="10" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="1" id="12" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="2" id="14" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="3" id="16" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="4" id="18" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="5" id="20" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="6" id="22" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="7" id="24" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="8" id="26" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="9" id="28" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="10" id="11" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="11" id="13" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="12" id="15" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="13" id="17" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="14" id="19" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="15" id="21" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="16" id="23" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="17" id="25" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="18" id="27" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="19" id="29" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="20" id="30" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="21" id="31" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="22" id="32" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="23" id="33" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="24" id="34" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="25" id="35" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="26" id="36" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="27" id="37" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="28" id="38" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="29" id="39" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="30" id="40" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="31" id="41" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="32" id="42" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="33" id="43" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="34" id="44" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="35" id="45" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="36" id="46" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="37" id="47" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="38" id="48" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="39" id="49" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="40" id="50" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="41" id="51" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="42" id="52" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="43" id="53" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="44" id="54" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="45" id="55" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="46" id="56" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="47" id="57" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="48" id="58" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="49" id="59" order="-1"/>
+    </tileset>
+    <music atlasID="0" desc="A calm but dark intrumental intro that would fit menu's or intros." id="11" loop="true" name="Dark Forest Loop" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="Typical desert-style music.&lt;br&gt;http://creativecommons.org/licenses/by-nc-nd/3.0/ &lt;br&gt;&lt;br&gt;Music composed, produced and published by MetalRenard Music.&lt;br&gt; http://metalrenardmusic.com &lt;br&gt;http://facebook.com/metalrenardmusic" id="6" loop="true" name="Desert Travel" oid="24438" pan="0" shared="true" stream="true" type="mp3" volume="1"/>
+    <background atlasID="0" desc="" durations="80,80,80,80" dx="-0.0" dy="-0.0" height="384" id="14" name="galaxyTwo" numframes="4" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
+    <background atlasID="0" desc="" durations="100,100" dx="-0.0" dy="-0.0" height="64" id="19" name="Green" numframes="2" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="64" xpf="1.0" ypf="1.0"/>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="370" id="13" name="h p 2" numframes="1" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="650" xpf="1.0" ypf="1.0"/>
+    <music atlasID="0" desc="A happy theme.&lt;br&gt;http://creativecommons.org/licenses/by-nc-nd/3.0/ &lt;br&gt;&lt;br&gt;Music composed, produced and published by MetalRenard Music.&lt;br&gt; http://metalrenardmusic.com &lt;br&gt;http://facebook.com/metalrenardmusic" id="10" loop="true" name="Happy Theme" oid="24441" pan="0" shared="true" stream="true" type="mp3" volume="1"/>
+    <music atlasID="0" desc="Genre: Tense&#10;Loop: Yes&#10;&#10;This piece was created for Dungeon Crawler game. This is the title theme music and can be used as a recurring theme in-game as well." id="5" loop="true" name="Intro Music" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="7" loop="true" name="Level 1 Theme" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="8" loop="true" name="Music" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="1" fixedrot="false" fric="0.2" gid="3" id="2" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Player" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="3" static="false">
         <snippets/>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="3" name="Player" readable="false" shared="false">
-        <anim across="1" down="1" durations="100" height="80" id="0" loop="true" name="Animation 0" numframes="1" originx="29" originy="40" sync="false" version="2" width="58">
-            <poly data="4,0,0,58,0,58,80,0,80" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        <anim across="1" down="1" durations="100" height="80" id="0" loop="true" name="Animation 0" numframes="1" originx="29" originy="80" sync="false" version="2" width="58">
+            <poly data="4,0,80,58,80,58,0,0,0" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <music atlasID="0" desc="" id="9" loop="true" name="scene1song" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <tileset across="8" atlasID="0" desc="" down="22" id="0" name="Simple Town" oid="-1" readable="false" shared="false" th="32" tw="32">
         <tile collision="1" data="" durations="100" frames="0" id="0" order="-1"/>
         <tile collision="1" data="" durations="100" frames="1" id="1" order="-1"/>
@@ -324,4 +386,26 @@
         <tile collision="1" data="" durations="100" frames="174" id="174" order="-1"/>
         <tile collision="1" data="" durations="100" frames="175" id="175" order="-1"/>
     </tileset>
+    <tileset across="3" atlasID="0" desc="" down="5" id="4" name="Sketch" oid="23398" readable="false" shared="true" th="32" tw="32">
+        <tile collision="1" data="" durations="100" frames="0" id="0" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="1" id="1" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="2" id="2" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="3" id="3" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="4" id="4" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="5" id="5" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="6" id="6" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="7" id="7" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="8" id="8" order="-1"/>
+        <tile collision="3" data="" durations="100" frames="9" id="9" order="-1"/>
+        <tile collision="2" data="" durations="100" frames="10" id="10" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="11" id="11" order="-1"/>
+        <tile collision="5" data="" durations="100" frames="12" id="12" order="-1"/>
+        <tile collision="4" data="" durations="100" frames="13" id="13" order="-1"/>
+        <tile collision="22" data="" durations="100" frames="14" id="14" order="-1"/>
+    </tileset>
+    <font alphabet=" !&quot;#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ" atlasID="0" desc="" height="176" id="12" name="Tech" offsets="0|0|0|,22|0|22,44|0|44,66|0|66,66|0|66,66|0|66,66|0|66,66|0|66,85|0|85,85|0|85,85|0|85,119|0|119,161|0|161,181|0|181,211|0|211,230|0|230,282|0|282,327|0|327,364|0|364,409|0|409,454|0|454,502|0|502,547|0|547,592|0|592,637|0|637,682|0|682,727|0|727,746|0|746,766|0|766,766|0|766,802|0|802,802|0|802,848|0|848,902|0|902,950|0|950,998|0|998,1046|0|1046,1094|0|1094,1142|0|1142,1190|0|1190,1238|0|1238,1289|0|1289,1317|0|1317,1356|0|1356,1407|0|1407,1455|0|1455,1506|0|1506,1557|0|1557,1605|0|1605,1653|0|1653,1703|0|1703,1754|0|1754,1799|0|1799,1847|0|1847,1900|0|1900,1951|0|1951,2002|0|2002,2055|0|2055,2108|0|2108,2157|0|2157,2157|0|2157,2209|0|2209,2209|0|2209,2209|0|2209,2245|0|2245,2245|0|2245,2296|0|2296,2347|0|2347,2395|0|2395,2446|0|2446,2497|0|2497,2536|0|2536,2587|0|2587,2638|0|2638,2664|0|2664,2695|0|2695,2746|0|2746,2771|0|2771,2822|0|2822,0|88|2873,48|88|2921,99|88|2972,150|88|3023,186|88|3059,237|88|3110,270|88|3143,321|88|3194,372|88|3245,423|88|3296,474|88|3347,525|88|3398,577|88|3450,577|88|3450,577|88|3450,577|88|3450,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,620|88|3493,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,639|88|3512,682|88|3555,682|88|3555,682|88|3555,682|88|3555,682|88|3555,682|88|3555,682|88|3555,682|88|3555,682|88|3555,733|88|3606,784|88|3657,835|88|3708,886|88|3759,937|88|3810,988|88|3861,1067|88|3940,1115|88|3988,1166|88|4039,1217|88|4090,1268|88|4141,1319|88|4192,1350|88|4223,1379|88|4252,1408|88|4281,1436|88|4309,1436|88|4309,1487|88|4360,1535|88|4408,1583|88|4456,1631|88|4504,1679|88|4552,1727|88|4600,1727|88|4600,1775|88|4648,1826|88|4699,1877|88|4750,1928|88|4801" oid="-1" prerendered="false" readable="false" rowHeight="88" shared="false"/>
+    <tileset across="1" atlasID="0" desc="" down="1" id="17" name="Tiles" oid="-1" readable="false" shared="false" th="32" tw="32">
+        <tile collision="1" data="" durations="100" frames="0" id="0" order="-1"/>
+    </tileset>
+    <background atlasID="0" desc="Size : 1000 x 730" durations="100" dx="-0.1" dy="-0.0" height="729" id="15" name="Universe I" numframes="1" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="1000" xpf="0.0" ypf="0.0"/>
 </pack>
