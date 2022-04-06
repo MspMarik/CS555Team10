@@ -10,10 +10,12 @@
     <actors>
         <actor a="0.0" aid="1" c="true" group="3" id="2" name="Player 1" order="0" sx="0.55172414" sy="0.55172414" x="275" y="194" z="3">
             <snippets>
-                <s enabled="true" id="1"/>
+                <s enabled="true" id="1">
+                    <prop id="1" list="0" val="0"/>
+                </s>
                 <s enabled="true" id="2">
-                    <prop id="2147483647" list="0" val="thisactor"/>
                     <prop id="32" list="0" val="down"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
                     <prop id="33" list="0" val="left"/>
                     <prop id="34" list="0" val="right"/>
                     <prop id="38" list="0" val="0.0"/>
@@ -38,6 +40,10 @@
                 </s>
             </snippets>
         </actor>
+        <actor a="0.0" aid="2" c="false" group="3" id="6" name="Seeds 2" order="1" sx="1.0" sy="1.0" x="250" y="184" z="3"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="6" name="Seeds 3" order="2" sx="1.0" sy="1.0" x="244" y="209" z="3"/>
+        <actor a="0.0" aid="4" c="false" group="3" id="6" name="Seeds 4" order="3" sx="1.0" sy="1.0" x="197" y="145" z="3"/>
+        <actor a="0.0" aid="5" c="false" group="3" id="6" name="Seeds 5" order="4" sx="1.0" sy="1.0" x="196" y="196" z="3"/>
     </actors>
     <snippets/>
     <terrain>
