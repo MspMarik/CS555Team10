@@ -1,2 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="1" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-color comment="false" x="26" y="40">
+                    <color b="0" g="200" id="0" r="255"/>
+                </set-color>
+                <drawfill-roundrect comment="false" x="26" y="67">
+                    <int id="0" val="1"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="0"/>
+                    <get-game-val-0 comment="false" id="3" x="0" y="0"/>
+                    <int id="4" val="10"/>
+                    <int id="5" val="5"/>
+                </drawfill-roundrect>
+            </group>
+        </draw>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-game-val-0 comment="false" x="26" y="40">
+                    <get-wh comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="0"/>
+                    </get-wh>
+                </set-game-val-0>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

@@ -61,21 +61,51 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_2 extends ActorScript
+class Design_8_8_DrawHealth extends ActorScript
 {
-	public var _vel:Float;
+	public var _Blinking:Bool;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		nameMap.set("vel", "_vel");
-		_vel = 0;
+		nameMap.set("Actor", "actor");
+		nameMap.set("Blinking", "_Blinking");
+		_Blinking = false;
 		
 	}
 	
 	override public function init()
 	{
+		
+		/* ========================= When Drawing ========================= */
+		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if((asNumber(actor.getActorValue("" + Engine.engine.getGameAttribute("happiness"))) == 100))
+				{
+					if(!(_Blinking))
+					{
+						_Blinking = true;
+						g.fillColor = Utils.convertColor(Utils.getColorRGB(255,255,255));
+						runLater(1000 * .2, function(timeTask:TimedTask):Void
+						{
+							g.fillColor = Utils.convertColor(Utils.getColorRGB(255,0,255));
+							runLater(1000 * .2, function(timeTask:TimedTask):Void
+							{
+								_Blinking = false;
+							}, actor);
+						}, actor);
+					}
+				}
+				else
+				{
+					g.fillColor = Utils.convertColor(Utils.getColorRGB(255,255,0));
+				}
+				g.fillRect(44, 0, (asNumber(actor.getActorValue("" + Engine.engine.getGameAttribute("happiness"))) * 8), 4);
+			}
+		});
 		
 	}
 	
