@@ -66,15 +66,17 @@
         <key id="4" keyname="Z" name="action1" vk="90" vks="90"/>
         <key id="5" keyname="X" name="action2" vk="88" vks="88"/>
         <key id="6" keyname="ENTER" name="enter" vk="10" vks="10"/>
+        <key id="7" keyname="ESCAPE" name="esc" vk="27" vks="27"/>
     </input>
     <attcats>
         <cat id="-1" name="Default"/>
     </attcats>
     <props/>
     <attributes>
-        <number cid="-1" id="2" name="Turnips" save="true" value="0"/>
+        <number cid="-1" id="2" name="Turnips" save="true" value="0.0"/>
         <number cid="-1" id="0" name="happiness" save="true" value="30.0"/>
-        <number cid="-1" id="1" name="Seed_Count" save="true" value="0"/>
+        <number cid="-1" id="1" name="Seed_Count" save="true" value="0.0"/>
+        <text cid="-1" id="3" name="Prev_Scene" save="true" value=""/>
     </attributes>
     <collisions>
         <poly id="0" name="Square" pts="0.0,0.0#0.0,1.0#1.0,1.0#1.0,0.0"/>
