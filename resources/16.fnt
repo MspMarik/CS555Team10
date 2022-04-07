@@ -1,0 +1,16 @@
+#
+#Thu Apr 07 18:57:47 EDT 2022
+shadow.x=2
+shadow.y=2
+color=\#3366ff
+stroke.color=\#ffffff
+shadow.blur=5
+stroke.size=5
+shadow.color=\#000000
+alphabet=
+gradient.offset=0
+size=93
+antialias=true
+style=bold
+family=Cheri.ttf
+chars=custom

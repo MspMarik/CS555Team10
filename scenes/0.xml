@@ -45,6 +45,7 @@
         <actor a="0.0" aid="4" c="false" group="3" id="6" name="Seeds 4" order="3" sx="1.0" sy="1.0" x="90" y="108" z="3"/>
         <actor a="0.0" aid="5" c="false" group="3" id="6" name="Seeds 5" order="4" sx="1.0" sy="1.0" x="89" y="159" z="3"/>
         <actor a="0.0" aid="6" c="false" group="3" id="8" name="Dirt 6" order="5" sx="1.0" sy="1.0" x="275" y="25" z="3"/>
+        <actor a="0.0" aid="7" c="false" group="3" id="11" name="NPC 7" order="6" sx="1.0" sy="1.0" x="522" y="46" z="3"/>
     </actors>
     <snippets/>
     <terrain>
