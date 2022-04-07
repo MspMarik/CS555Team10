@@ -1,0 +1,17 @@
+#
+#Thu Apr 07 19:05:06 EDT 2022
+shadow.x=0
+shadow.y=0
+color=\#77c9ff
+stroke.color=\#ffffff
+shadow.blur=4
+stroke.size=2
+shadow.color=\#000000
+alphabet=
+gradient.offset=0
+size=42
+gradient.color=\#0099ff
+antialias=true
+style=bold
+family=SansSerif
+chars=all

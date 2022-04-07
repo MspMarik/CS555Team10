@@ -75,6 +75,16 @@ class SceneEvents_2 extends SceneScript
 	override public function init()
 	{
 		
+		/* ========================= When Drawing ========================= */
+		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				g.setFont(getFont(17));
+				g.drawString("" + "Mindful Meadows", 60, 100);
+			}
+		});
+		
 	}
 	
 	override public function forwardMessage(msg:String)
