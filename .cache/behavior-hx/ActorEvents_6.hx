@@ -61,16 +61,13 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_2 extends ActorScript
+class ActorEvents_6 extends ActorScript
 {
-	public var _vel:Float;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		nameMap.set("vel", "_vel");
-		_vel = 0.0;
 		
 	}
 	

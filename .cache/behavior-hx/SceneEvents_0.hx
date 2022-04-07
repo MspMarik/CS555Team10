@@ -43,6 +43,7 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
+import box2D.collision.shapes.B2Shape;
 
 import com.stencyl.graphics.shaders.BasicShader;
 import com.stencyl.graphics.shaders.GrayscaleShader;
@@ -61,21 +62,69 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_2 extends ActorScript
+class SceneEvents_0 extends SceneScript
 {
-	public var _vel:Float;
+	public var _npcengaged:Bool;
+	public var _enteredregion:Actor;
+	public var _visitedregion:Bool;
 	
 	
-	public function new(dummy:Int, actor:Actor, dummy2:Engine)
+	public function new(dummy:Int, dummy2:Engine)
 	{
-		super(actor);
-		nameMap.set("vel", "_vel");
-		_vel = 0.0;
+		super();
+		nameMap.set("npc_engaged", "_npcengaged");
+		_npcengaged = false;
+		nameMap.set("entered_region", "_enteredregion");
+		nameMap.set("visited_region", "_visitedregion");
+		_visitedregion = false;
 		
 	}
 	
 	override public function init()
 	{
+		
+		/* ======================== Actor of Type ========================= */
+		addActorEntersRegionListener(getRegion(0), function(a:Actor, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && sameAsAny(getActorType(2),a.getType(),a.getGroup()))
+			{
+				_npcengaged = true;
+				_visitedregion = true;
+			}
+		});
+		
+		/* ======================== Actor of Type ========================= */
+		addActorExitsRegionListener(getRegion(0), function(a:Actor, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && sameAsAny(getActorType(2),a.getType(),a.getGroup()))
+			{
+				_npcengaged = false;
+				runLater(1000 * 3, function(timeTask:TimedTask):Void
+				{
+					_visitedregion = false;
+				}, null);
+			}
+		});
+		
+		/* ========================= When Drawing ========================= */
+		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if((_npcengaged == true))
+				{
+					g.drawString("" + "Would you like to buy some seeds?", 288, 126);
+					if(isKeyDown("enter"))
+					{
+						
+					}
+				}
+				else if(((_npcengaged == false) && (_visitedregion == true)))
+				{
+					g.drawString("" + "Thank you come again", 288, 126);
+				}
+			}
+		});
 		
 	}
 	

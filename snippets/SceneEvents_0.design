@@ -1,2 +1,87 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="1" id="0">
+        <event-type-region comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-val-0-1 comment="false" x="26" y="47">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-0-1>
+                <set-val-0-3 comment="false" x="26" y="72">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-0-3>
+            </group>
+            <int id="0" val="0"/>
+            <REGION eid="0" id="1"/>
+            <actortype eid="2" id="2"/>
+        </event-type-region>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="3" id="0">
+        <draw comment="false" x="80" y="60">
+            <group eventID="3" id="-1">
+                <if comment="false" x="91" y="85">
+                    <group eventID="3" id="-1">
+                        <draw-text comment="false" x="102" y="115">
+                            <int id="0" val="Would you like to buy some seeds?"/>
+                            <int id="1" val="288"/>
+                            <int id="2" val="126"/>
+                        </draw-text>
+                        <if comment="false" x="102" y="135">
+                            <group eventID="3" id="-1"/>
+                            <keystate comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <control eid="6" id="1"/>
+                            </keystate>
+                        </if>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-0-1 comment="false" id="0" x="0" y="0"/>
+                        <true comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
+                <else-if comment="false" x="91" y="212">
+                    <group eventID="3" id="-1">
+                        <draw-text comment="false" x="102" y="247">
+                            <int id="0" val="Thank you come again"/>
+                            <int id="1" val="288"/>
+                            <int id="2" val="126"/>
+                        </draw-text>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <eq comment="false" id="0" x="0" y="0">
+                            <get-val-0-1 comment="false" id="0" x="0" y="0"/>
+                            <false comment="false" id="1" x="0" y="0"/>
+                        </eq>
+                        <eq comment="false" id="1" x="0" y="0">
+                            <get-val-0-3 comment="false" id="0" x="0" y="0"/>
+                            <true comment="false" id="1" x="0" y="0"/>
+                        </eq>
+                    </and>
+                </else-if>
+            </group>
+        </draw>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <event-type-region comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <set-val-0-1 comment="false" x="26" y="47">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-0-1>
+                <dolater comment="false" x="26" y="72">
+                    <group eventID="4" id="-1">
+                        <set-val-0-3 comment="false" x="37" y="99">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-0-3>
+                    </group>
+                    <int id="0" val="3"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+            </group>
+            <int id="0" val="1"/>
+            <REGION eid="0" id="1"/>
+            <actortype eid="2" id="2"/>
+        </event-type-region>
+    </group>
+    <group eventID="4" id="-1"/>
+</groups>

@@ -43,6 +43,7 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
+import box2D.collision.shapes.B2Shape;
 
 import com.stencyl.graphics.shaders.BasicShader;
 import com.stencyl.graphics.shaders.GrayscaleShader;
@@ -61,21 +62,41 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_2 extends ActorScript
+class SceneEvents_3 extends SceneScript
 {
-	public var _vel:Float;
+	public var _userInput:String;
 	
 	
-	public function new(dummy:Int, actor:Actor, dummy2:Engine)
+	public function new(dummy:Int, dummy2:Engine)
 	{
-		super(actor);
-		nameMap.set("vel", "_vel");
-		_vel = 0.0;
+		super();
+		nameMap.set("userInput", "_userInput");
+		_userInput = "";
 		
 	}
 	
 	override public function init()
 	{
+		
+		/* =========================== Any Key ============================ */
+		addAnyKeyPressedListener(function(event:KeyboardEvent, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if((event.keyCode == Key.ENTER))
+				{
+					/*  */
+				}
+				else if((event.keyCode == Key.BACKSPACE))
+				{
+					_userInput = (_userInput).substring(0, ((_userInput).length - 1));
+				}
+				else
+				{
+					
+				}
+			}
+		});
 		
 	}
 	

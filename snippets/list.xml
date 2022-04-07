@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
     <snippet attachedevent="true" class="scripts.SceneEvents_0" classname="scripts.SceneEvents_0" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="0" name="SceneEvents_0" oid="-1" package="scripts." sceneid="0" shared="false" type="scene">
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="npc_engaged" hidden="false" id="1" name="_npcengaged" order="0"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="entered_region" hidden="false" id="2" name="_enteredregion" order="1"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="visited_region" hidden="false" id="3" name="_visitedregion" order="2"/>
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="Enters Region" enabled="true" id="1" name="event-type-region" order="1" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="3" name="draw" order="4" repeats="true"/>
+            <event displayName="Leaves Region" enabled="true" id="4" name="event-type-region" order="2" repeats="true"/>
+        </events>
     </snippet>
     <snippet actorid="2" attachedevent="true" class="scripts.ActorEvents_2" classname="scripts.ActorEvents_2" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="1" name="ActorEvents_2" oid="-1" package="scripts." shared="false" type="actor">
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="vel" hidden="false" id="1" name="_vel" order="0"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="vel" hidden="false" id="1" name="_vel" order="0"/>
         <blocks/>
         <events/>
     </snippet>
@@ -115,5 +122,16 @@
             <event displayName="On Actor" enabled="true" id="6" name="event-mouse-enter-exit-actor" order="6" repeats="true"/>
             <event displayName="SwitchScene" enabled="true" id="15" name="event-custom" order="15" repeats="true"/>
         </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_3" classname="scripts.SceneEvents_3" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="8" name="SceneEvents_3" oid="-1" package="scripts." sceneid="3" shared="false" type="scene">
+        <text default="" defaultValue="" desc="" dropdown="" fullname="userInput" hidden="false" id="1" name="_userInput" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Any Key" enabled="true" id="1" name="event-key-any-press-release" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="6" attachedevent="true" class="scripts.ActorEvents_6" classname="scripts.ActorEvents_6" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="9" name="ActorEvents_6" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
     </snippet>
 </pack>

@@ -5,15 +5,19 @@
         <layer blendMode="normal" color="0,95,36" id="3" locked="false" name="Layer 3" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
     </layers>
     <joints/>
-    <regions/>
+    <regions>
+        <region b="64" g="64" h="122" id="0" name="Region 0" pts="4,0.0,0.0,149.0,0.0,149.0,122.0,0.0,122.0" r="64" type="box" w="149" x="472" y="12"/>
+    </regions>
     <terrainRegions/>
     <actors>
         <actor a="0.0" aid="1" c="true" group="3" id="2" name="Player 1" order="0" sx="0.55172414" sy="0.55172414" x="275" y="194" z="3">
             <snippets>
-                <s enabled="true" id="1"/>
+                <s enabled="true" id="1">
+                    <prop id="1" list="0" val="0"/>
+                </s>
                 <s enabled="true" id="2">
-                    <prop id="2147483647" list="0" val="thisactor"/>
                     <prop id="32" list="0" val="down"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
                     <prop id="33" list="0" val="left"/>
                     <prop id="34" list="0" val="right"/>
                     <prop id="38" list="0" val="0.0"/>
@@ -38,6 +42,7 @@
                 </s>
             </snippets>
         </actor>
+        <actor a="0.0" aid="2" c="false" group="3" id="6" name="NPC 2" order="1" sx="0.23728813" sy="0.23728813" x="446" y="-55" z="3"/>
     </actors>
     <snippets/>
     <terrain>
