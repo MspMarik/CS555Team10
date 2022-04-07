@@ -75,6 +75,17 @@ class SceneEvents_0 extends SceneScript
 	override public function init()
 	{
 		
+		/* ========================= When Drawing ========================= */
+		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				g.setFont(getFont(10));
+				g.drawString("" + (("Seeds: ") + (("" + (Engine.engine.getGameAttribute("Seed_Count") : Float)))), 30, 30);
+				g.drawString("" + (("Turnips: ") + (("" + (Engine.engine.getGameAttribute("Turnips") : Float)))), 30, 60);
+			}
+		});
+		
 	}
 	
 	override public function forwardMessage(msg:String)

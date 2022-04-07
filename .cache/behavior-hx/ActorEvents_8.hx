@@ -63,11 +63,14 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 class ActorEvents_8 extends ActorScript
 {
+	public var _AlreadyPlanted:Bool;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
+		nameMap.set("Already_Planted", "_AlreadyPlanted");
+		_AlreadyPlanted = false;
 		
 	}
 	
@@ -79,13 +82,18 @@ class ActorEvents_8 extends ActorScript
 		{
 			if(wrapper.enabled && sameAsAny(getActorType(2), event.otherActor.getType(),event.otherActor.getGroup()))
 			{
-				if((actor.getAnimation() == "Grow"))
+				if((actor.getAnimation() == "Grown"))
 				{
 					Engine.engine.setGameAttribute("Turnips", ((Engine.engine.getGameAttribute("Turnips") : Float) + 1));
 					actor.setAnimation("Dirt");
+					runLater(1000 * 2, function(timeTask:TimedTask):Void
+					{
+						_AlreadyPlanted = false;
+					}, actor);
 				}
-				else if(((Engine.engine.getGameAttribute("Seed_Count") : Float) > 0))
+				else if((((Engine.engine.getGameAttribute("Seed_Count") : Float) > 0) && (_AlreadyPlanted == false)))
 				{
+					_AlreadyPlanted = true;
 					Engine.engine.setGameAttribute("Seed_Count", ((Engine.engine.getGameAttribute("Seed_Count") : Float) - 1));
 					actor.setAnimation("Planted");
 					runLater(1000 * 5, function(timeTask:TimedTask):Void
