@@ -133,4 +133,10 @@
             <event displayName="Collect seeds" enabled="true" id="1" name="event-collide-actortotype" order="1" repeats="true"/>
         </events>
     </snippet>
+    <snippet actorid="8" attachedevent="true" class="scripts.ActorEvents_8" classname="scripts.ActorEvents_8" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="10" name="ActorEvents_8" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events>
+            <event displayName="Actor - Type" enabled="true" id="2" name="event-collide-actortotype" order="2" repeats="true"/>
+        </events>
+    </snippet>
 </pack>
