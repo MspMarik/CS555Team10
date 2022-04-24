@@ -68,6 +68,7 @@
         <key id="6" keyname="ENTER" name="enter" vk="10" vks="10"/>
         <key id="7" keyname="ESCAPE" name="esc" vk="27" vks="27"/>
         <key id="8" keyname="SPACE" name="Space" vk="32" vks="32"/>
+        <key id="9" keyname="BACKSPACE" name="backspace" vk="8" vks="8"/>
     </input>
     <attcats>
         <cat id="-1" name="Default"/>
@@ -75,8 +76,9 @@
     <props/>
     <attributes>
         <number cid="-1" id="2" name="Turnips" save="true" value="0.0"/>
+        <number cid="-1" id="4" name="money" save="true" value="30"/>
         <number cid="-1" id="0" name="happiness" save="true" value="30.0"/>
-        <number cid="-1" id="1" name="Seed_Count" save="true" value="0.0"/>
+        <number cid="-1" id="1" name="Seed_Count" save="true" value="1"/>
         <text cid="-1" id="3" name="Prev_Scene" save="true" value=""/>
     </attributes>
     <collisions>
@@ -108,7 +110,7 @@
     </collisions>
     <autotileFormats/>
     <atlases>
-        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,1,2,4,5,6,8,10,11,13,14,17," name="Main Atlas" pvr="false" resize="0" target="0"/>
+        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,1,2,4,5,6,8,10,11,13,14,17,19,20,22,24," name="Main Atlas" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" target="0"/>

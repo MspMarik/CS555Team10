@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="1" desc="" eventsnippetid="17" extheight="544" extwidth="704" extx="-32" exty="-32" format="4.0.1" gravx="-0.0" gravy="0.0" height="480" id="6" name="Int river" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
+    <layers>
+        <color-bg blue="0" green="153" red="51"/>
+        <layer blendMode="normal" color="100,168,234" id="0" locked="false" name="Layer 0" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+    </layers>
+    <joints/>
+    <regions>
+        <region b="64" g="64" h="66" id="0" name="ToHouses" pts="4,0.0,0.0,28.0,0.0,28.0,66.0,0.0,66.0" r="64" type="box" w="28" x="1" y="351"/>
+        <region b="64" g="64" h="64" id="1" name="ToMeditation" pts="4,0.0,0.0,25.0,0.0,25.0,64.0,0.0,64.0" r="64" type="box" w="25" x="611" y="353"/>
+    </regions>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="1" c="true" group="3" id="2" name="Player 1" order="0" sx="0.55" sy="0.55" x="293" y="343" z="0">
+            <snippets>
+                <s enabled="true" id="1"/>
+                <s enabled="true" id="3">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="33" list="0" val="left"/>
+                    <prop id="34" list="0" val="right"/>
+                    <prop id="37" list="0" val="0"/>
+                    <prop id="38" list="0" val="true"/>
+                    <prop id="39" list="0" val="false"/>
+                    <prop id="40" list="0" val="0.0"/>
+                    <prop id="41" list="0" val=""/>
+                    <prop id="42" list="0" val=""/>
+                    <prop id="11" list="0" val="30.0"/>
+                    <prop id="43" list="0" val=""/>
+                    <prop id="44" list="0" val=""/>
+                    <prop id="45" list="0" val="true"/>
+                    <prop id="46" list="0" val="true"/>
+                </s>
+            </snippets>
+        </actor>
+    </actors>
+    <snippets/>
+    <terrain>
+        <p pts="4,640.0,16.0,640.0,0.0,0.0,0.0,0.0,16.0" x="0.0" y="256.0"/>
+        <p pts="4,0.0,0.0,0.0,16.0,640.0,16.0,640.0,0.0" x="0.0" y="384.0"/>
+        <p pts="4,640.0,16.0,640.0,0.0,0.0,0.0,0.0,16.0" x="0.0" y="224.0"/>
+        <p pts="4,480.0,16.0,480.0,0.0,0.0,0.0,0.0,16.0" x="160.0" y="128.0"/>
+        <p pts="4,0.0,0.0,0.0,16.0,480.0,16.0,480.0,0.0" x="160.0" y="96.0"/>
+        <p pts="4,480.0,16.0,480.0,0.0,0.0,0.0,0.0,16.0" x="160.0" y="0.0"/>
+        <p pts="4,480.0,16.0,480.0,0.0,0.0,0.0,0.0,16.0" x="160.0" y="160.0"/>
+        <p pts="4,0.0,0.0,0.0,16.0,480.0,16.0,480.0,0.0" x="160.0" y="32.0"/>
+        <p pts="4,480.0,16.0,480.0,0.0,0.0,0.0,0.0,16.0" x="160.0" y="64.0"/>
+        <p pts="4,640.0,16.0,640.0,0.0,0.0,0.0,0.0,16.0" x="0.0" y="352.0"/>
+        <p pts="4,0.0,0.0,0.0,16.0,32.0,16.0,32.0,0.0" x="96.0" y="128.0"/>
+        <p pts="4,0.0,16.0,32.0,16.0,32.0,0.0,0.0,0.0" x="32.0" y="64.0"/>
+        <p pts="4,32.0,16.0,32.0,0.0,0.0,0.0,0.0,16.0" x="96.0" y="0.0"/>
+    </terrain>
+    <atlases members="" retainAtlases="true"/>
+</scene>
