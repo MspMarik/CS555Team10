@@ -79,6 +79,7 @@
         <number cid="-1" id="4" name="money" save="true" value="30.0"/>
         <number cid="-1" id="0" name="happiness" save="true" value="30.0"/>
         <number cid="-1" id="1" name="Seed_Count" save="true" value="1.0"/>
+        <number cid="-1" id="5" name="growing_speed" save="true" value="2.0"/>
         <text cid="-1" id="3" name="Prev_Scene" save="true" value=""/>
     </attributes>
     <collisions>

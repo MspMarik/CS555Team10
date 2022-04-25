@@ -96,9 +96,38 @@ class ActorEvents_8 extends ActorScript
 					_AlreadyPlanted = true;
 					Engine.engine.setGameAttribute("Seed_Count", ((Engine.engine.getGameAttribute("Seed_Count") : Float) - 1));
 					actor.setAnimation("Planted");
-					runLater(1000 * 5, function(timeTask:TimedTask):Void
+					runLater(1000 * (Engine.engine.getGameAttribute("growing_speed") : Float), function(timeTask:TimedTask):Void
 					{
-						actor.setAnimation("Grown");
+						actor.setAnimation("1");
+						runLater(1000 * (Engine.engine.getGameAttribute("growing_speed") : Float), function(timeTask:TimedTask):Void
+						{
+							actor.setAnimation("2");
+							runLater(1000 * (Engine.engine.getGameAttribute("growing_speed") : Float), function(timeTask:TimedTask):Void
+							{
+								actor.setAnimation("3");
+								runLater(1000 * (Engine.engine.getGameAttribute("growing_speed") : Float), function(timeTask:TimedTask):Void
+								{
+									actor.setAnimation("Grown");
+								}, actor);
+							}, actor);
+						}, actor);
+					}, actor);
+				}
+			}
+		});
+		
+		/* ======================== Actor of Type ========================= */
+		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && sameAsAny(getActorType(2), event.otherActor.getType(),event.otherActor.getGroup()))
+			{
+				if(isKeyPressed("enter"))
+				{
+					actor.getLastCollidedActor().setAnimation("water");
+					Engine.engine.setGameAttribute("growing_speed", 0.5);
+					runLater(1000 * 2, function(timeTask:TimedTask):Void
+					{
+						Engine.engine.setGameAttribute("growing_speed", 2);
 					}, actor);
 				}
 			}

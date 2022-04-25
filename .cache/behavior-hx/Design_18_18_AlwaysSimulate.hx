@@ -43,7 +43,6 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
-import box2D.collision.shapes.B2Shape;
 
 import com.stencyl.graphics.shaders.BasicShader;
 import com.stencyl.graphics.shaders.GrayscaleShader;
@@ -62,44 +61,22 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_4 extends SceneScript
+class Design_18_18_AlwaysSimulate extends ActorScript
 {
 	
 	
-	public function new(dummy:Int, dummy2:Engine)
+	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
-		super();
+		super(actor);
+		nameMap.set("Actor", "actor");
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================= After N seconds ======================== */
-		runLater(1000 * 5, function(timeTask:TimedTask):Void
-		{
-			if(wrapper.enabled)
-			{
-				stopAllSounds();
-				playSound(getSound(19));
-				getActor(1).setAnimation("sleeping");
-				runLater(1000 * 10, function(timeTask:TimedTask):Void
-				{
-					stopAllSounds();
-					switchScene(GameModel.get().scenes.get(6).getID(), null, createCrossfadeTransition(0.2));
-				}, null);
-			}
-		}, null);
-		
-		/* ========================= When Drawing ========================= */
-		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				g.setFont(getFont(17));
-				g.drawString("" + "Medatating...", 200, 200);
-			}
-		});
+		/* ======================== When Creating ========================= */
+		actor.makeAlwaysSimulate();
 		
 	}
 	
