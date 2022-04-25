@@ -7,7 +7,9 @@
     <joints/>
     <regions/>
     <terrainRegions/>
-    <actors/>
+    <actors>
+        <actor a="0.0" aid="1" c="false" group="3" id="22" name="sound 1" order="0" sx="0.2" sy="0.2" x="56" y="73" z="0"/>
+    </actors>
     <snippets/>
     <terrain>
         <p pts="4,640.0,16.0,640.0,0.0,0.0,0.0,0.0,16.0" x="0.0" y="448.0"/>

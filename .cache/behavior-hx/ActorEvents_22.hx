@@ -63,16 +63,39 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 class ActorEvents_22 extends ActorScript
 {
+	public var _muted:Bool;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
+		nameMap.set("muted", "_muted");
+		_muted = false;
 		
 	}
 	
 	override public function init()
 	{
+		
+		/* =========================== On Actor =========================== */
+		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && 3 == mouseState)
+			{
+				if((_muted == false))
+				{
+					setVolumeForAllSounds(0/100);
+					actor.setAnimation("muted");
+					_muted = true;
+				}
+				else
+				{
+					setVolumeForAllSounds(100/100);
+					actor.setAnimation("unmuted");
+					_muted = false;
+				}
+			}
+		});
 		
 	}
 	

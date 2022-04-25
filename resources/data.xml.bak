@@ -426,8 +426,11 @@
         <snippets/>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="23" name="sound" readable="false" shared="false">
-        <anim across="1" down="1" durations="100" height="512" id="0" loop="true" name="Animation 0" numframes="1" originx="256" originy="256" sync="false" version="2" width="512">
+        <anim across="1" down="1" durations="100" height="512" id="0" loop="true" name="unmuted" numframes="1" originx="256" originy="256" sync="false" version="2" width="512">
             <poly data="4,0,512,512,512,512,0,0,0" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="300" id="1" loop="true" name="muted" numframes="1" originx="150" originy="150" sync="false" version="2" width="300">
+            <poly data="4,0,0,300,0,300,300,0,300" density="0.1" fric="0.2" gid="-1000" id="0" name="muted" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <tileset across="25" atlasID="0" desc="Not made by me. Ported for use in stencyl.&#10;&#10;32x32. Original Set can be downloaded here:&#10;http://www.gamepoetry.com/blog/2008/06/27/free-rpg-tilesheets/" down="19" id="4" name="Urbansqual Farm Exterior" oid="-1" readable="false" shared="false" th="32" tw="32">

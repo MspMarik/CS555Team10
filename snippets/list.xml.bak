@@ -177,8 +177,11 @@
         </events>
     </snippet>
     <snippet actorid="22" attachedevent="true" class="scripts.ActorEvents_22" classname="scripts.ActorEvents_22" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="14" name="ActorEvents_22" oid="-1" package="scripts." shared="false" type="actor">
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="muted" hidden="false" id="1" name="_muted" order="0"/>
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="On Actor" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="1" repeats="true"/>
+        </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_4" classname="scripts.SceneEvents_4" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="15" name="SceneEvents_4" oid="-1" package="scripts." sceneid="4" shared="false" type="scene">
         <blocks/>
