@@ -22,11 +22,11 @@
                     <prop id="38" list="0" val="true"/>
                     <prop id="39" list="0" val="false"/>
                     <prop id="40" list="0" val="0.0"/>
-                    <prop id="41" list="0" val=""/>
-                    <prop id="42" list="0" val=""/>
+                    <prop id="41" list="0" val="Animation 1"/>
+                    <prop id="42" list="0" val="Animation 0"/>
+                    <prop id="43" list="0" val="Animation 1"/>
                     <prop id="11" list="0" val="30.0"/>
-                    <prop id="43" list="0" val=""/>
-                    <prop id="44" list="0" val=""/>
+                    <prop id="44" list="0" val="Animation 0"/>
                     <prop id="45" list="0" val="true"/>
                     <prop id="46" list="0" val="true"/>
                 </s>
